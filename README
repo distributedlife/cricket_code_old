@@ -1,0 +1,16 @@
+Spaces Invaded
+JS/WebGL version forked from the Test Invaders project. 
+
+Will eventually be enough to show all you need is JS and love to make games
+-javascript
+-- node, requirejs
+-- jasmine
+-webgl
+-three.js
+
+notes: http://peg.gd/2t4
+
+Audio to credit:
+http://www.freesound.org/people/ERH/sounds/34187/
+http://www.freesound.org/people/Omar%20Alvarado/sounds/93741/
+http://www.freesound.org/people/HerbertBoland/sounds/33637/

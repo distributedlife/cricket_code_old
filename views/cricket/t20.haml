@@ -1,0 +1,171 @@
+!!!5
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}
+    %link{rel: "stylesheet", type: "text/css", href: "/public/stylesheet/index.css"}
+    %script{'data-main': "/public/javascript/t20_cricket.js", src: "/public/javascript/ext/require.js"}
+    %script{src: "/public/javascript/config.js"}
+  %body
+    #supply
+      %h1 Supply
+      #full_deck
+        %span.full Full:
+        %span#full_deck_card_count
+        %a#full_deck_card_buy{href:"#"} [buy]
+      #good_deck
+        %span.good Good:
+        %span#good_deck_card_count
+        %a#good_deck_card_buy{href:"#"} [buy]
+      #short_deck
+        %span.short Short:
+        %span#short_deck_card_count
+        %a#short_deck_card_buy{href:"#"} [buy]
+      #bouncer_yorker_deck
+        %span Bouncers &amp; Yorkers:
+        %span#bouncer_yorker_deck_card_count
+        %a#bouncer_yorker_deck_card_buy{href:"#"} [buy]
+      #chance_your_arm_deck
+        %span Chance Your Arm:
+        %span#chance_your_arm_deck_card_count
+    #ball
+      %h1 Current Ball
+      .length
+        %span Length:
+        %span#length
+      .play
+        %span Play:
+        %span#play
+      .shot
+        %span Shot:
+        %span#shot
+      .height
+        %span Shot Height:
+        %span#height
+      .distance
+        %span Shot Distance:
+        %span#distance
+      .chancing_arm
+        %span Chancing Arm:
+        %span#chancing_arm
+      .result
+        %span Result:
+        %span#result
+    #hand
+      %h1 Player Hand
+      %p#player_role
+      #cards
+      #control
+        %a#leave_ball{href: "#"} [Leave Ball]
+        %a#play_shot{href: "#"} [Play Selected Card]
+        %a#chance_arm{href: "#"} [Chance Arm]
+        %a#sneak_run{href: "#"} [Sneak Run]
+        %a#cutoff_run{href: "#"} [Cutoff Run]
+        %a#next_ball{href: "#"} [Accept Result]
+        %a#change_field{href: "#"} [Change Field]
+        %a#finish_trashing_cards{href: "#"} [Finish Trashing Cards]
+        %a#finish_setting_field{href: "#"} [Finished Setting Field]
+    #opponent_hand
+      %h1 Opponent Hand
+      %p
+        Card Count:
+        %span#opponent_hand_cards
+    #momentum_display
+      %h1 Momentum
+      %p.player
+        My Momentum:
+        %span#player_momentum
+      %p.opponent
+        Opponent Momentum
+        %span#opponent_momentum
+    #field
+      %h1 Field
+      %p#field_valid
+      %p
+        slips
+        %span#slips 0
+      %p
+        square drive
+        %a#infield_square_drive{href: "#"} vacant
+        %a#outfield_square_drive{href: "#"} vacant
+      %p
+        cover drive
+        %a#infield_cover_drive{href: "#"} vacant
+        %a#outfield_cover_drive{href: "#"} vacant
+      %p
+        off drive
+        %a#infield_off_drive{href: "#"} vacant
+        %a#outfield_off_drive{href: "#"} vacant
+      %p
+        straight drive
+        %a#infield_straight_drive{href: "#"} vacant
+        %a#outfield_straight_drive{href: "#"} vacant
+      %p
+        on drive
+        %a#infield_on_drive{href: "#"} vacant
+        %a#outfield_on_drive{href: "#"} vacant
+      %p
+        pull
+        %a#infield_pull{href: "#"} vacant
+        %a#outfield_pull{href: "#"} vacant
+      %p
+        hook
+        %a#infield_hook{href: "#"} vacant
+        %a#outfield_hook{href: "#"} vacant
+      %p
+        leg glance
+        %a#infield_leg_glance{href: "#"} vacant
+        %a#outfield_leg_glance{href: "#"} vacant
+      %p
+        late cut
+        %a#infield_late_cut{href: "#"} vacant
+        %a#outfield_late_cut{href: "#"} vacant
+      %p
+        cut
+        %a#infield_cut{href: "#"} vacant
+        %a#outfield_cut{href: "#"} vacant
+      %p
+        square cut
+        %a#infield_square_cut{href: "#"} vacant
+        %a#outfield_square_cut{href: "#"} vacant
+    #scoreboard
+      %h1 Scoreboard
+      #innings1
+        #player_1
+          %h2 Human (Player 1)
+          %p
+            %span Score:
+            %span#innings1_team_a_wickets 0
+            %span \/
+            %span#innings1_team_a_runs 0
+          %p
+            %span Overs:
+            %span#innings1_team_a_overs 0
+          %p
+            %span Run rate:
+            %span#innings1_team_a_run_rate 0.0
+          %p
+            %span Record:
+            %span#innings1_team_a_record
+        #player_2
+          %h2 AI (Player 2)
+          %p
+            %span Score:
+            %span#innings1_team_b_wickets 0
+            %span \/
+            %span#innings1_team_b_runs 0
+          %p
+            %span Overs:
+            %span#innings1_team_b_overs 0
+          %p
+            %span Run rate:
+            %span#innings1_team_b_run_rate 0.0
+          %p
+            %span Required Run rate:
+            %span#innings1_team_b_required_run_rate 0.0
+          %p
+            %span Record:
+            %span#innings1_team_b_record
+      .result
+        %h2 Result
+        %p#match_result In Progress
+    #game_board

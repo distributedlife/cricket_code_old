@@ -1,0 +1,90 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+#game_screen {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:3em;
+  width: 900px;
+  height: 600px;
+ z-index: -99999;
+}
+
+.tv_frame {
+  border-radius: 10px;
+  border: 1px solid white ;
+}
+
+.crazy_big {
+  margin-top: 1.5em;
+  font-size: 4em;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+#field {
+  clear: left;
+  float: left;
+  width: 600px;
+}
+
+#supply {
+  float: left;
+  width: 200px;
+}
+
+#ball {
+  float: left;
+  width: 300px;
+}
+
+#hand {
+  float: left;
+  width: 400px;
+}
+
+#scoreboard {
+  float: left;
+  width: 600px;
+}
+
+#opponent_hand {
+	float: left;
+	width: 300px;
+}
+
+#momentum_display {
+	float: left;
+	width: 200px;
+}
+
+.green {
+  color: green;
+}
+
+.full {
+	color: aqua;
+}
+
+.good {
+	color: lawngreen;
+}
+
+.short {
+	color: orangered;
+}
+
+.bouncer {
+	color: mediumblue;
+}
